@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800&family=EB+Garamond:wght@400;500;600;700;800&family=Special+Elite&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+    letter-spacing: 1px;
+}
+
+.outer-wrapper{
+   background: linear-gradient(to bottom, rgb(175,206,225), rgb(32,139,198));
+   min-width:100vw;
+   min-height:100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.inner-wrapper{
+    max-width: 1400px;
+    width:100%;
+    background: linear-gradient(rgb(41,94,133),rgb(96,122,141));
+    box-shadow: 0px 4px 10px 0.5px rgb(57,138,195);
+    display: flex;
+    min-height: 800px;
+    overflow: auto;
+}
+
+/******** Left Section  *********/
+.left-result{
+width:62%;
+background: linear-gradient(to bottom,rgb(37,139,201), rgb(179,210,227));
+
+}
+.left-result img{
+    width:48%;
+}
+.upper{
+    height:70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lower{
+    height:30%;
+    display: flex;
+    color:rgb(242,248,252);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2.2rem;
+    font-size: 2.4rem;
+}
+
+/****** Temperature ******/
+.lower .temp{
+    flex:2;
+    font-size: 5.5rem;
+    /* margin-left:2rem; */
+}
+.temp span{
+    font-weight: 100;
+}
+.lower sup{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+/******* Location ******/
+.lower .loc{ 
+    flex:2.5;
+    font-size: 2.7rem;
+    line-height: 2.5rem;
+}
+.loc .country{
+    display: block;
+    font-size: 1.4rem;
+}
+
+/**** Mood *****/
+.lower .mood{
+    flex:1.7;
+    font-size: 2.5rem;
+} 
+
+
+/************ Left Section ends  ************/
+
+
+/************ Right Section  *******************/
+.right-result{
+    width:38%;
+    display: flex;
+    flex-direction: column;
+    padding:1.7rem 2.2rem;
+    color:rgb(118,152,176);
+    font-size: 1.6rem;
+}
+
+/****** Search ******/
+.search{
+    flex:1;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+button[type="submit"]{
+    padding:1.5rem 1rem;
+    border:none;
+    background-color: rgb(169,206,225);
+    cursor: pointer;
+    flex:1;
+    margin-right: -2.2rem;
+    margin-top: -1.7rem;
+}
+
+.fa-search{
+    font-size: 2rem;
+}
+
+input{
+    border:none;
+    padding:1rem 4rem 0 0;
+    background: transparent;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.466);
+    color:rgb(242,248,252);
+    font-size: 1.6rem;
+    outline: none;
+    flex:5;
+}
+::placeholder{
+    color:rgb(242,248,252);
+}
+
+/**********Cities ********/
+.cities{
+flex:4;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border-bottom:1px solid rgba(245, 245, 245, 0.466);
+}
+.cities p{
+    padding:0.5rem 1rem;
+    cursor: pointer;
+    margin-left:-1rem;
+    line-height: 3rem;
+}
+.cities p:hover{
+    background-color: rgb(169,206,225);
+    color:rgb(242,248,252);
+    border-radius:2.5rem;
+}
+
+/********* Weather Details ********/
+.weather-details{
+    flex:5;
+    border-bottom:1px solid rgba(245, 245, 245, 0.466);
+}
+.weather-details h3{
+    color:rgb(242,248,252);
+    font-weight: 400;
+    margin:1.5rem 0 0.7rem 0;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:0.75rem;
+}
+.details:last-child{
+    margin-bottom:0.5rem;
+}
+.value{
+    color:rgb(242,248,252);
+    letter-spacing: 2px;
+}
+
+/*********** Right Section ends **************/

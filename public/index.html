@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <script src="js/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/9174788f8a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="outer-wrapper">
+    <div class="inner-wrapper">
+        <div class="left-result">
+           <div class="upper">
+               <img src="img/hot-air-balloon-ghantee-9.png" alt="">
+           </div>
+           <div class="lower">
+               <p class="temp">09<sup>o</sup><span>C</span></p>
+               <p class="loc">Newcastle upon Tyne<span class="country">United Kingdom</span> </p>
+               <p class="mood">Sunny</p>
+           </div>
+        </div>
+        <div class="right-result">
+            <form class="search">
+                    <input id="location" name="location" placeholder="Enter a location">
+                    <!-- <input type="submit" value="Check Weather"> -->
+                    <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="cities">
+                <p class="city">Birmingham</p>
+                <p class="city">Manchester</p>
+                <p class="city">New York</p>
+                <p class="city">California</p>
+            </div>   
+            <div class="weather-details">
+                <h3>Weather Details</h3>
+                <div class="details">
+                    <div class="detail"><p>Apparent Temperature</p><p class="value">12<sup>o</sup>C</p></div>
+                    <div class="detail"><p>Humidity</p><p class="value">12%</p></div>
+                    <div class="detail"><p>Wind</p><p class="value">12km/h</p></div>
+                    <div class="detail"><p>UV Index</p><p class="value">1</p></div>
+                    <div class="detail"><p>Visibility</p><p class="value">12km</p></div>
+                    <div class="detail"><p>Cloudy</p><p class="value">12%</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
